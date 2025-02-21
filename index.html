@@ -9,6 +9,9 @@
     <title>Timyr Dyachenko - Frontend Developer | React, TypeScript, WordPress</title>
     <link rel="stylesheet" href="dist/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,24 +22,36 @@
             <h1>Timyr Dyachenko</h1>
             <h2>Frontend Software Developer</h2>
             <address class="profile__contact">
-                <a href="https://maps.app.goo.gl/MUsYwQPsyg4ZLkYF7" class="profile__contact-item--left">Kyiv, Ukraine</a>
-                <a href="mailto:twork.dyachenko@gmail.com" aria-label="Email Timyr Dyachenko" class="profile__contact-item--right">twork.dyachenko@gmail.com</a>
-                <a href="tel:380977143966" aria-label="Call Timyr Dyachenko" class="profile__contact-item--left">+380977143966</a>
-                <a href="https://t.me/timyr_dyachenko" target="_blank" rel="noopener noreferrer" class="profile__contact-item--right">Telegram: @timyr_dyachenko</a>
+                <a href="https://maps.app.goo.gl/MUsYwQPsyg4ZLkYF7" class="profile__contact-item--left">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Kyiv, Ukraine
+                </a>
+                <a href="mailto:twork.dyachenko@gmail.com" aria-label="Email Timyr Dyachenko" class="profile__contact-item--right">
+                    <i class="fas fa-envelope"></i>
+                    twork.dyachenko@gmail.com
+                </a>
+                <a href="tel:380977143966" aria-label="Call Timyr Dyachenko" class="profile__contact-item--left">
+                    <i class="fas fa-phone"></i>
+                    +380977143966
+                </a>
+                <a href="https://t.me/timyr_dyachenko" target="_blank" rel="noopener noreferrer" class="profile__contact-item--right">
+                    <i class="fab fa-telegram-plane"></i>
+                    Telegram: @timyr_dyachenko
+                </a>
             </address>
         </div>
     </header>
-    
-    <main>
-        <section class="objective">
+
+    <main data-aos="fade-up">
+        <section class="objective" id="objective" >
             <h3>Objective</h3>
             <div class="objective__text">
                 <p>I’m looking for a challenging front-end web developer position in a friendly, professional team where members complement each other’s skills and knowledge to achieve excellent results.</p>
             </div>
         </section>
 
-        <section class="skills">
-            <h3>Skills, Abilities</h3>
+        <section class="skills" >
+            <h3>Skills</h3>
             <div class="skills__list">
                 <ul class="skills__list-item">
                     <li><strong>Frameworks:</strong>
@@ -95,7 +110,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4>WEB STUDIO | Mykolaiv | Kyiv</h4>
+                    <h4>WEB Studio | Mykolaiv | Kyiv</h4>
                     <p><strong>Front-end Developer</strong> | April 2019 - May 2020</p>
                     <ul>
                         <li>Cross-browser and responsive development of web pages on Angular</li>
@@ -156,6 +171,7 @@
     <footer>
         <p>2025 Timyr Dyachenko - Frontend Developer</p>
     </footer>
-    <script src="dist/js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>

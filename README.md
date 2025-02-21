@@ -13,7 +13,7 @@ This is a personal resume web page for Timyr Dyachenko, a Frontend Developer. Th
 
 ### Step 1: Clone the Repository
 
-git clone https://github.com/
+git clone https://github.com/twork-dyachenko/timyr-frontend-portfolio
 
 ### Step 2: Install Dependencie
 
