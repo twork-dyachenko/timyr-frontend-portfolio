@@ -1,0 +1,174 @@
+@font-body: 'Poppins', sans-serif;
+@color-gray: #a2b9c1;
+@color-dark: #333;
+@color-text: #4e6351;
+@color-link: #4a90e2;
+@color-background: #eceae7;
+
+body{
+    width: 100%;
+    max-width: 60vw;
+    margin: 60px auto;
+    font-family: @font-body;
+    background-color: @color-background;
+    color: @color-dark;
+    @media screen and (max-width: 1024px) {
+        max-width: 90vw;
+    }
+}
+
+h1{
+    color: @color-gray;
+}
+
+h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    margin-right: 50px;
+    color: @color-text;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 2px;
+        background: @color-gray;
+    }
+}
+
+h4{
+    margin-bottom: 0;
+}
+
+section {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    gap: 50px;
+    @media screen and (max-width: 1024px){
+        flex-direction: column;
+        gap: 15px;
+    }
+    ul{
+        margin-top: 5px;
+        padding-left: 0;
+        li{
+            ul{
+                li{
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+    li{
+        margin-bottom: 10px;
+    }
+}
+
+footer{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.profile{
+    text-align: center;
+    position: relative;
+    &__img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        @media screen and (max-width: 1024px){
+            position: relative;
+            margin: 0 auto;
+        }
+    }
+    &__contact{
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        gap: 0 20px;
+        padding: 15px 0;
+        border-top: 1px solid @color-gray;
+        border-bottom: 1px solid @color-gray;
+        font-style: normal;
+        @media screen and (max-width: 1024px){
+            justify-content: center;
+        }
+        &-item{
+            &--left{
+                text-align: right;
+            }
+            &--right{
+                text-align: left;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -10px;
+                    bottom: 0;
+                    width: 1px;
+                    height: 100%;
+                    background: @color-gray;
+                }
+                @media screen and (max-width: 1024px){
+                    &::before{
+                        content: none;
+                    }
+                }
+            }
+        }
+        a{
+            flex: 0 0 48%;
+            box-sizing: border-box;
+            position: relative;
+            color: @color-link;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+            &:hover {
+                color: #2a6bbf;
+
+            }
+            @media screen and (max-width: 1024px){
+                flex: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.objective{
+    margin-top: 60px;
+    @media screen and (max-width: 1024px){
+        margin-top: 30px;
+    }
+    &__text{
+        width: 100%;
+    }
+}
+
+.skills{
+    &__list{
+        &-item{
+            padding-left: 35px;
+        } 
+    }
+}
+
+.education, .experience {
+    &__list{
+        p{
+            color: @color-text;
+        }
+        ul{
+            padding-left: 35px;
+        } 
+    }
+}
